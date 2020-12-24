@@ -1,14 +1,17 @@
 # 主服务器
 
 防火墙开放1433端口
+
 ![image.gif](1.gif)
+
 ![image.png](1.png)
 
 ![image.png](2.png)
 
-新建文件夹,设置局域网共享
+新建文件夹,设置局域网共享需everyone 读取/写入
 
 ![image.png](3.png)
+
 ![image.png](4.png)
 
 启动sqlserver代理,并设置自启动
@@ -18,6 +21,7 @@
 建个测试数据库
 
 ![image.png](6.png)
+
 ![image.png](7.png)
 
 配置分发
@@ -35,6 +39,7 @@
 右键本地发布 新建发布
 
 ![image.png](10.png)
+
 ![image.png](11.png)
 
 选事务发布,快照发布可能相当于全量备份还原,对等发布是多主复制,合并发布不明确
@@ -52,6 +57,7 @@
 立即创建快照,正式环境还可以定时运行,节省服务器压力
 
 ![image.png](15.png)
+
 ![image.png](16.png)
 
 设置账号密码
@@ -71,6 +77,7 @@
 输入主服务器名称以及登录名密码,据说不能用IP
 
 ![image.png](20.png)
+
 ![image.png](21.png)
 
 选第一个,第二个未跑通据说跟权限设置相关
@@ -80,7 +87,9 @@
 新建订阅数据库
 
 ![image.png](23.png)
+
 ![image.png](24.png)
+
 ![image.png](25.png)
 
 此处可定时获取,未尝试,目测问题不大
